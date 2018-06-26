@@ -3,7 +3,7 @@
 interface
 
 uses
-  Management,HandleGame,
+  Management,HandleGame,GlobalVars,
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.ExtCtrls;
 
@@ -68,14 +68,6 @@ TForm1 = class(TForm)
 
 var
   Form1: TForm1;
-  // define variables
-  GAME_TITLE: string = 'FIFA Online4 - Developed by SPEARHEAD';
-  GARENA_SIGNOUT_TITLE: string = 'Garena - Your Ultimate Game Platform';
-  GARENA_SIGNIN_TITLE: string = 'Garena - Game Center';
-
-  // button click
-    POSCLICK_SIGNIN_X: integer = 578;
-    POSCLICK_SIGNIN_Y: integer = 434;
 
 implementation
 

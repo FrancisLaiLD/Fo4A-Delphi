@@ -44,14 +44,10 @@ object Form1: TForm1
     Top = 53
     Width = 577
     Height = 457
-    ActivePage = tabMainUI
+    ActivePage = tabGeneralSetup
     TabOrder = 0
     object tabMainUI: TTabSheet
       Caption = 'Giao di'#7879'n ch'#432#417'ng tr'#236'nh'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object grpboxMoreInfo: TGroupBox
         Left = 3
         Top = 264
@@ -93,10 +89,6 @@ object Form1: TForm1
     object tabGeneralSetup: TTabSheet
       Caption = 'C'#224'i '#273#7863't chung'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object grpVersionInfo: TGroupBox
         Left = 3
         Top = 264
