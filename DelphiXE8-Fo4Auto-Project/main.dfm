@@ -48,6 +48,10 @@ object Form1: TForm1
     TabOrder = 0
     object tabMainUI: TTabSheet
       Caption = 'Giao di'#7879'n ch'#432#417'ng tr'#236'nh'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object grpboxMoreInfo: TGroupBox
         Left = 3
         Top = 264

@@ -9,13 +9,18 @@ uses
 
 type
 
-  WorkerThread = class(TThread)
+PosClick = record
+    x: integer;
+    y: integer;
+end;
+
+WorkerThread = class(TThread)
     protected
         m_countSecond : integer;
         procedure Execute; override;
-  end;
+    end;
 
-  TForm1 = class(TForm)
+TForm1 = class(TForm)
     pagMain: TPageControl;
     tabMainUI: TTabSheet;
     tabGeneralSetup: TTabSheet;
@@ -63,6 +68,14 @@ type
 
 var
   Form1: TForm1;
+  // define variables
+  GAME_TITLE: string = 'FIFA Online4 - Developed by SPEARHEAD';
+  GARENA_SIGNOUT_TITLE: string = 'Garena - Your Ultimate Game Platform';
+  GARENA_SIGNIN_TITLE: string = 'Garena - Game Center';
+
+  // button click
+    POSCLICK_SIGNIN_X: integer = 578;
+    POSCLICK_SIGNIN_Y: integer = 434;
 
 implementation
 
@@ -73,8 +86,8 @@ var
     m_Hwnd: Hwnd;
 
 begin
-    m_Hwnd := HandleGame.getWindowHandle('FIFA Online4 - Developed by SPEARHEAD');
-    HandleGame.leftMouseClick(m_Hwnd, 1170, 748);
+    m_Hwnd := HandleGame.getWindowHandle(GARENA_SIGNOUT_TITLE);
+    HandleGame.leftMouseClick(m_Hwnd, POSCLICK_SIGNIN_X, POSCLICK_SIGNIN_Y);
 end;
 
 
