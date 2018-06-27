@@ -7,7 +7,8 @@ uses
   Vcl.Styles,
   Management in 'Management.pas',
   HandleGame in 'HandleGame.pas',
-  afxCodeHook in 'afxCodeHook.pas';
+  afxCodeHook in 'afxCodeHook.pas',
+  GlobalVars in 'GlobalVars.pas';
 
 {$R *.res}
 

@@ -44,7 +44,7 @@ object Form1: TForm1
     Top = 53
     Width = 577
     Height = 457
-    ActivePage = tabGeneralSetup
+    ActivePage = tabMainUI
     TabOrder = 0
     object tabMainUI: TTabSheet
       Caption = 'Giao di'#7879'n ch'#432#417'ng tr'#236'nh'
