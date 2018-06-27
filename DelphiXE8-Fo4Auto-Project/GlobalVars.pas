@@ -1,4 +1,4 @@
-unit GlobalVars;
+﻿unit GlobalVars;
 
 interface
 var
@@ -9,6 +9,9 @@ var
 
   GAME_PROCESS_NAME: string = '';
   GARENA_PROCESS_NAME: string = '';
+
+  STR_CONFIRM_OUTAUTO: string = 'Bạn có chắc muốn thoát Fo4A ?';
+  STR_CONFIRM_OUTGAME: string = 'Bạn có chắc muốn thoát game ?';
 
   // button click
     POSCLICK_SIGNIN_X: integer = 578;

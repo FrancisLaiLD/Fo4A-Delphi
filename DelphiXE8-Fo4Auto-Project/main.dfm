@@ -17,7 +17,7 @@ object Form1: TForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 16
-  object Label1: TLabel
+  object lblSTTAppTitle: TLabel
     Left = 141
     Top = 13
     Width = 299
@@ -32,19 +32,12 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Label6: TLabel
-    Left = 176
-    Top = 224
-    Width = 144
-    Height = 16
-    Caption = 'Waitting for new function'
-  end
   object pagMain: TPageControl
     Left = 1
     Top = 53
     Width = 577
     Height = 457
-    ActivePage = tabMainUI
+    ActivePage = tabGeneralSetup
     TabOrder = 0
     object tabMainUI: TTabSheet
       Caption = 'Giao di'#7879'n ch'#432#417'ng tr'#236'nh'
@@ -163,14 +156,14 @@ object Form1: TForm1
           Font.Style = []
           ParentFont = False
         end
-        object Label4: TLabel
+        object lblSTTTimeAutoRun: TLabel
           Left = 6
           Top = 210
           Width = 139
           Height = 16
           Caption = 'Th'#7901'i gian auto '#273#227' ch'#7841'y :'
         end
-        object Label5: TLabel
+        object lblTimeAutoRun: TLabel
           Left = 151
           Top = 210
           Width = 15

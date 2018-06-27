@@ -34,16 +34,15 @@ TForm1 = class(TForm)
     lblSTTGameStatus: TLabel;
     lblGameStatus: TLabel;
     btnQuickOutGame: TButton;
-    Label1: TLabel;
+    lblSTTAppTitle: TLabel;
     lblStopAutoByMatch: TLabel;
     cbxStopAutoByMatch: TCheckBox;
     tedStopAutoByMatch: TEdit;
     lblStopAutoByMin: TLabel;
     cbxOutGarena: TCheckBox;
     cbxShutdownComputer: TCheckBox;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
+    lblSTTTimeAutoRun: TLabel;
+    lblTimeAutoRun: TLabel;
     cbxStopAutoByMin: TCheckBox;
     tedStopAutoByMin: TEdit;
     cbxOutGame: TCheckBox;
@@ -68,6 +67,7 @@ TForm1 = class(TForm)
 
 var
   Form1: TForm1;
+  m_gameHWND: HWND;
 
 implementation
 
@@ -78,8 +78,8 @@ var
     m_Hwnd: Hwnd;
 
 begin
-    m_Hwnd := HandleGame.getWindowHandle(GARENA_SIGNOUT_TITLE);
-    HandleGame.leftMouseClick(m_Hwnd, POSCLICK_SIGNIN_X, POSCLICK_SIGNIN_Y);
+    if MessageDlgCenter1(STR_CONFIRM_OUTGAME, mtConfirmation, [mbOk, mbCancel]) = mrOk then
+        HandleGame.endProcessByName('fifa4zf.exe');
 end;
 
 
@@ -150,14 +150,14 @@ procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
 var
   msg: String;
 begin
-  msg:='You have not saved. Do you really want to close?';
-  if MessageDlgCenter1(msg, mtConfirmation, [mbOk, mbCancel]) = mrCancel then
+  msg:='';
+  if MessageDlgCenter1(STR_CONFIRM_OUTAUTO, mtConfirmation, [mbOk, mbCancel]) = mrCancel then
     CanClose := false;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-//    m_WorkerThread := WorkerThread.Create(false);
+    m_WorkerThread := WorkerThread.Create(false);
 end;
 
 //***************************   INTERFACE   **********************************
@@ -166,8 +166,8 @@ procedure TForm1.updateTimeToGui();
 var
     l_DateTime : TDateTime;
 begin
-    l_DateTime := Management.getInternetDateTime();
-
+//    l_DateTime := Management.getInternetDateTime();
+    l_DateTime := Time;
     Form1.lblCurrentTime.Caption := TimeToStr(l_DateTime);
 end;
 
@@ -198,17 +198,26 @@ begin
     while Not Terminated do
     begin
     // update Time to Gui
-
     Sleep(1000);
     m_countSecond := m_countSecond +1;
 
     Form1.updateTimeToGui();
-    // check RadioButton group
 
-    Form1.lblGameStatus.Caption := IntToStr(m_countSecond);
+    Form1.lblTimeAutoRun.Caption := IntToStr(m_countSecond) + ' phút';
+    // Check game state
+    m_gameHWND := HandleGame.getWindowHandle(GAME_TITLE);
+    if (m_gameHWND <> 0) then
+        begin
+            Form1.btnQuickOutGame.Enabled := true;
+            Form1.lblGameStatus.Caption := 'ON';
+            Form1.lblGameStatus.Font.Style := [fsBold];
+        end
+    else
+        begin
+            Form1.btnQuickOutGame.Enabled := False;
+            Form1.lblGameStatus.Caption := '---';
+        end;
 
-//    if m_countSecond = 6 then
-//        m_countSecond := 0;
     end;
 
 end;
