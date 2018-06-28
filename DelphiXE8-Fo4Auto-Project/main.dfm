@@ -260,6 +260,15 @@ object Form1: TForm1
           ParentFont = False
           TabOrder = 5
         end
+        object btnTestFunc: TButton
+          Left = 206
+          Top = 136
+          Width = 123
+          Height = 25
+          Caption = 'Test ch'#7913'c n'#259'ng'
+          TabOrder = 8
+          OnClick = btnTestFuncClick
+        end
       end
     end
   end

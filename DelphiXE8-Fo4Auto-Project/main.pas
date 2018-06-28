@@ -46,6 +46,7 @@ TForm1 = class(TForm)
     cbxStopAutoByMin: TCheckBox;
     tedStopAutoByMin: TEdit;
     cbxOutGame: TCheckBox;
+    btnTestFunc: TButton;
     procedure btnQuickOutGameClick(Sender: TObject);
 
     // interface
@@ -56,6 +57,7 @@ TForm1 = class(TForm)
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
     procedure cbxStopAutoByMinClick(Sender: TObject);
     procedure cbxStopAutoByMatchClick(Sender: TObject);
+    procedure btnTestFuncClick(Sender: TObject);
 
 
   private
@@ -82,6 +84,11 @@ begin
         HandleGame.endProcessByName('fifa4zf.exe');
 end;
 
+
+procedure TForm1.btnTestFuncClick(Sender: TObject);
+begin
+    m_WorkerThread := WorkerThread.Create(false);
+end;
 
 procedure TForm1.cbxStopAutoByMatchClick(Sender: TObject);
 begin
@@ -157,7 +164,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-    m_WorkerThread := WorkerThread.Create(false);
+
 end;
 
 //***************************   INTERFACE   **********************************
@@ -167,7 +174,8 @@ var
     l_DateTime : TDateTime;
 begin
 //    l_DateTime := Management.getInternetDateTime();
-    l_DateTime := Time;
+//    l_DateTime := Time;
+    l_DateTime := Management.getInternetDateTime();
     Form1.lblCurrentTime.Caption := TimeToStr(l_DateTime);
 end;
 

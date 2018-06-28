@@ -21,23 +21,24 @@ end;
 
 procedure Cleanup;
 begin
-  if WSACleanup <> 0
-  then raise Exception.Create('WSACleanup');
+    if WSACleanup() <> 0then
+        raise Exception.Create('WSACleanup');
 end;
 
 function getInternetDateTime : TDateTime;
 var
   SNTPClient: TIdSNTP;
 begin
-  Startup;
-  Result := 0;
-  try
-    SNTPClient.Host := 'time.windows.com';
-    Result := SNTPClient.DateTime;
-  finally
-    SNTPClient.Free;
-  Cleanup;
-  end;
+    Result := 0;
+    SNTPClient := TIdSNTP.Create();
+    Startup();
+    try
+        SNTPClient.Host := 'time.windows.com';
+        Result := SNTPClient.DateTime;
+    finally
+        SNTPClient.Free;
+    end;
+    Cleanup();
 end;
 
 end.

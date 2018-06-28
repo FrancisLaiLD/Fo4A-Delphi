@@ -3,17 +3,17 @@
 	<Transactions>
     <Transaction>2018/06/21 01:18:53.000.795,=C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/06/21 01:20:09.000.192,=C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/06/21 01:20:35.000.785,C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Fo4A.dproj</Transaction>
+    <Transaction>2018/06/21 01:20:35.000.785,C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Fo4A.dproj=C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2018/06/21 01:38:11.000.266,C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Fo4A.dproj=C:\Users\Francis Lai\Documents\Embarcadero\Studio\Projects\Fo4A.dproj</Transaction>
-    <Transaction>2018/06/21 01:56:54.000.570,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\main.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
-    <Transaction>2018/06/21 01:56:54.000.570,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\main.dfm=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.dfm</Transaction>
+    <Transaction>2018/06/21 01:56:54.000.570,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.dfm=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\main.dfm</Transaction>
+    <Transaction>2018/06/21 01:56:54.000.570,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\main.pas</Transaction>
     <Transaction>2018/06/21 19:11:38.000.633,=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
-    <Transaction>2018/06/21 19:12:14.000.466,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Management.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
+    <Transaction>2018/06/21 19:12:14.000.466,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Management.pas</Transaction>
     <Transaction>2018/06/25 20:35:15.000.056,=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
-    <Transaction>2018/06/25 20:36:06.000.302,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\HandleGame.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
+    <Transaction>2018/06/25 20:36:06.000.302,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\HandleGame.pas</Transaction>
     <Transaction>2018/06/26 20:11:50.000.903,=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
-    <Transaction>2018/06/26 20:12:01.000.738,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCoodHook.pas</Transaction>
-    <Transaction>2018/06/26 20:33:08.000.771,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCoodHook.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCodeHook.pas</Transaction>
+    <Transaction>2018/06/26 20:12:01.000.738,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCoodHook.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\Unit1.pas</Transaction>
+    <Transaction>2018/06/26 20:33:08.000.771,C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCodeHook.pas=C:\Users\Francis Lai\Desktop\DelphiXE8-Fo4Auto-Project\afxCoodHook.pas</Transaction>
     <Transaction>2018/06/27 22:40:44.000.297,=D:\Fo4A-Delphi-github\Fo4A-Delphi\DelphiXE8-Fo4Auto-Project\GlobalVars.pas</Transaction>
   </Transactions>
 </BorlandProject>
